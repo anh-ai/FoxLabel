@@ -1,24 +1,31 @@
 Cách cài đặt:
 =======
 
-`
-    conda install pyqt=5
-    conda install -c anaconda lxml
+.. code:: shell
+    d: 
+    cd\
+    python -m venv FoxLabel_venv
+    FoxLabel_venv/Scripts/activate
+    pip install pyqt=5
+    pip install lxml
     pyrcc5 -o libs/resources.py resources.qrc
     python labelImg.py
-`
-
-
-# Foxconn AI LabelImg TACT, gọi là `FoxLabel`:
+ 
+FoxLabel: Foxconn AI LabelImg [TACT]
 =======
+
+FoxLabel là phiên bản cải tiến của LabelImg, trong đó có cập nhật các cách làm sao cho đánh nhãn ít mà nhanh nhất có thể.
 
 Cách sử dụng:
 
-- Mở thư mục cần đánh nhãn = File Explorer, (giữ shift) chuột phải chọp `copy path`
+- Mở thư mục cần đánh nhãn = File Explorer, (giữ shift) chuột phải chọn `copy path`
 - Trên FLabel, chọn open, dán path vừa copy vào, nhấn OK để mở ảnh
 - Bấm Ctrl+V để lấy lại cái ROI cuối cùng, chỉnh sửa lại vị trí
-- Bấm Ctrl+S để lưu vào thư mục đó với tên: `_boxes.txt`
-- Thêm một file `_boxes.txtOK_NG.txt` có nội dung:
+- Bấm Ctrl+S để lưu vào thư mục đó với tên: `\_boxes.txt`
+- Thêm một file `\_boxes.txtOK_NG.txt` vào thư mục cùng chỗ với file `\_boxes.txt` vừa tạo, có nội dung:
+
+
+.. code:: shell
 
     '9': NG/9
     '10': NG/10
@@ -33,17 +40,7 @@ PM sẽ tự động chia ảnh vào folder tương ứng với nhãn OK/NG
 
 
 
-
-.. image:: /readme/images/labelimg.png
-        :target: https://github.com/heartexlabs/label-studio
-
-Label Studio is a modern, multi-modal data annotation tool
-=======
-
-LabelImg, the popular image annotation tool created by Tzutalin with the help of dozens contributors, is no longer actively being developed and has become part of the Label Studio community. Check out `Label Studio <https://github.com/heartexlabs/label-studio>`__, the most flexible open source data labeling tool for images, text, hypertext, audio, video and time-series data. `Install <https://labelstud.io/guide/install.html>`__ Label Studio and join the `slack community <https://label-studio.slack.com/>`__ to get started.
-
-.. image:: /readme/images/label-studio-1-6-player-screenshot.png
-        :target: https://github.com/heartexlabs/label-studio
+  
 
 About LabelImg
 ========
@@ -344,10 +341,4 @@ Related and additional tools
 7. `The link of this project on iHub platform <https://code.ihub.org.cn/projects/260/repository/labelImg>`__
 8. `Convert annotation files to CSV format or format for Google Cloud AutoML <https://github.com/tzutalin/labelImg/tree/master/tools>`__
 
-
-
-Stargazers over time
-~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://starchart.cc/tzutalin/labelImg.svg
-
+ 
