@@ -1,7 +1,9 @@
 Cách cài đặt:
 =======
+Mở CMD, chạy các lệnh sau:
 
 .. code:: shell
+
     d: 
     cd\
     python -m venv FoxLabel_venv
