@@ -1,11 +1,12 @@
 Cách cài đặt:
 =======
-```
+
+`
     conda install pyqt=5
     conda install -c anaconda lxml
     pyrcc5 -o libs/resources.py resources.qrc
     python labelImg.py
-```
+`
 
 
 # Foxconn AI LabelImg TACT, gọi là `FoxLabel`:
